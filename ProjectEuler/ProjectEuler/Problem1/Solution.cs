@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using ProjectEuler;
 
 namespace ProjectEuler.Problem1
 {
@@ -14,7 +9,11 @@ namespace ProjectEuler.Problem1
 
         public override void Run()
         {
-            throw new NotImplementedException();
+            var answer = Enumerable.Range(1, 999)
+                .Where(n => n % 3 == 0 || n % 5 == 0)
+                .Sum();
+
+            Console.WriteLine(answer);
         }
     }
 }
