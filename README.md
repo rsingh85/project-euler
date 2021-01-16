@@ -1,2 +1,2 @@
 # Project Euler
-Solutions to the Project Euler problems.
+Redoing the solutions to the Project Euler problems (.NET 5/C# 9.0).
