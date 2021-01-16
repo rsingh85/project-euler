@@ -4,11 +4,11 @@ namespace ProjectEuler
 {
     abstract class SolutionBase
     {
-        public abstract string ProblemText { get; }
+        public abstract string ProblemTitle { get; }
 
         public void Solve()
         {
-            Console.WriteLine("Running solution for problem: {0}", ProblemText);
+            Console.WriteLine("Running solution for problem: {0}", ProblemTitle);
             Run();
         }
 

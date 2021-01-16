@@ -5,7 +5,7 @@ namespace ProjectEuler.Problem1
 {
     class Solution : SolutionBase
     {
-        public override string ProblemText => "Multiples of 3 and 5";
+        public override string ProblemTitle => "Multiples of 3 and 5";
 
         public override void Run()
         {
