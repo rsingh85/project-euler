@@ -11,21 +11,14 @@ namespace ProjectEuler.Problem2
         protected override void Run()
         {
             var fibs = new List<int> { 1, 1 };
+            var next = fibs[^1] + fibs[^2]; // [^x] == xth index from the end (C# 8.0 feature)
             var sum = 0;
 
-            while (true)
+            while (next < 4000000)
             {
-                // [^x] == xth index from the end (C# 8.0 feature)
-                var fib = fibs[^1] + fibs[^2]; 
-
-                if (fib > 4000000)
-                {
-                    break;
-                }
-
-                sum += (fib % 2 == 0) ? fib : 0;
-
-                fibs.Add(fib);
+                fibs.Add(next);
+                sum += (next % 2 == 0) ? next : 0;
+                next = fibs[^1] + fibs[^2];
             }
 
             Console.WriteLine(sum);
