@@ -12,6 +12,6 @@ namespace ProjectEuler
             Run();
         }
 
-        public abstract void Run();
+        protected abstract void Run();
     }
 }

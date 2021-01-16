@@ -7,7 +7,7 @@ namespace ProjectEuler.Problem1
     {
         public override string ProblemTitle => "Multiples of 3 and 5";
 
-        public override void Run()
+        protected override void Run()
         {
             var answer = Enumerable.Range(1, 999)
                 .Where(n => n % 3 == 0 || n % 5 == 0)
